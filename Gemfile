@@ -15,6 +15,9 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'redcarpet'
+gem 'nokogiri'
+gem 'albino'
 
 group :test do
   # Pretty printed test output
