@@ -9,6 +9,6 @@ module ApplicationHelper
 		doc.search("//pre[@lang]").each do |pre|
 			pre.replace Albino.colorize(pre.text.rstrip, pre[:lang])
 		end
-		doc.to_s
+		doc.at_css("body").inner_html.to_s
 	end
 end
